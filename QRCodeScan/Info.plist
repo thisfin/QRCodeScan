@@ -21,9 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>balabalabala</string>
+	<string>需要您的同意才能获取摄像头</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>balabalabala</string>
+	<string>需要您的同意才能获取图片</string>
 	<key>UILaunchStoryboardName</key>
 	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
