@@ -132,12 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 661F83B11DA8A32400D3F70E /* Build configuration list for PBXNativeTarget "QRCodeScan" */;
 			buildPhases = (
-				173C7E91E8C057DDF7CCCD73 /* Check Pods Manifest.lock */,
+				173C7E91E8C057DDF7CCCD73 /* [CP] Check Pods Manifest.lock */,
 				661F83961DA8A32400D3F70E /* Sources */,
 				661F83971DA8A32400D3F70E /* Frameworks */,
 				661F83981DA8A32400D3F70E /* Resources */,
-				B573243A7211FD6E508BA540 /* Embed Pods Frameworks */,
-				B72631F14B2839BAE07A3E9F /* Copy Pods Resources */,
+				B573243A7211FD6E508BA540 /* [CP] Embed Pods Frameworks */,
+				B72631F14B2839BAE07A3E9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,29 +194,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		173C7E91E8C057DDF7CCCD73 /* Check Pods Manifest.lock */ = {
+		173C7E91E8C057DDF7CCCD73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B573243A7211FD6E508BA540 /* Embed Pods Frameworks */ = {
+		B573243A7211FD6E508BA540 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,14 +224,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRCodeScan/Pods-QRCodeScan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B72631F14B2839BAE07A3E9F /* Copy Pods Resources */ = {
+		B72631F14B2839BAE07A3E9F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

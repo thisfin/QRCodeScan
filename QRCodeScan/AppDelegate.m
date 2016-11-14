@@ -10,7 +10,7 @@
 
 #import "ScanViewController.h"
 #import "HistoryViewController.h"
-#import "WYIconfont.h"
+#import "TLIconfont.h"
 
 
 @interface AppDelegate ()
@@ -26,12 +26,12 @@
     tabBarController.viewControllers = @[({
         ScanViewController *controller = [[ScanViewController alloc] init];
         controller.title = @"扫描";
-        controller.tabBarItem.image = [WYIconfont imageWithIcon:@"\uf029" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:24];
+        controller.tabBarItem.image = [TLIconfont imageWithIcon:@"\uf029" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:24];
         controller;
     }), ({
         HistoryViewController *controller = [[HistoryViewController alloc] init];
         controller.title = @"历史";
-        controller.tabBarItem.image = [WYIconfont imageWithIcon:@"\uf03a" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:24];
+        controller.tabBarItem.image = [TLIconfont imageWithIcon:@"\uf03a" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:24];
         
         UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
 //        navController.navigationBar.barStyle = UIBarStyleBlack;

@@ -16,6 +16,6 @@
 
 
 #ifdef __OBJC__
-#import "WYUtility.h"
+#import <TianLuoCommon/TLCommon.h>
 #import "CommonMarco.h"
 #endif

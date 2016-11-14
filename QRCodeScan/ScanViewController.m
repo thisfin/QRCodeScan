@@ -11,7 +11,6 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <Masonry/Masonry.h>
-#import "WYIconfont.h"
 #import "ShadowView.h"
 #import "UsageUtility.h"
 #import "HistoryDataCache.h"
@@ -48,7 +47,7 @@
     UIButton *imgButton = [UIButton buttonWithType:UIButtonTypeCustom];
     imgButton.layer.cornerRadius = 20;
     imgButton.clipsToBounds = YES;
-    imgButton.titleLabel.font = [WYIconfont fontOfSize:20];
+    imgButton.titleLabel.font = [TLIconfont fontOfSize:20];
     imgButton.backgroundColor = [UIColor colorWithHexValue:0x000000 alpha:32];
     [imgButton setTitle:@"\uf03e" forState:UIControlStateNormal];
     [imgButton addTarget:self action:@selector(imageButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -63,7 +62,7 @@
     _lightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _lightButton.layer.cornerRadius = 20;
     _lightButton.clipsToBounds = YES;
-    _lightButton.titleLabel.font = [WYIconfont fontOfSize:20];
+    _lightButton.titleLabel.font = [TLIconfont fontOfSize:20];
     _lightButton.backgroundColor = [UIColor colorWithHexValue:0x000000 alpha:32];
     [_lightButton setTitle:@"\uf0e7" forState:UIControlStateNormal];
     [_lightButton addTarget:self action:@selector(LightButtonClicked:) forControlEvents:UIControlEventTouchUpInside];

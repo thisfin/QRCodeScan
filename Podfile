@@ -5,8 +5,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 def pods
-    pod 'WYUtility',            :path => '../WYUtility'
-    pod 'Masonry',              '~> 1.0.2'
+    pod 'TianLuoCommon',    :path => '../TianLuoCommon'
+    pod 'Masonry'
 end
 
 target 'QRCodeScan' do

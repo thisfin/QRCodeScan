@@ -9,7 +9,6 @@
 #import "HistoryViewController.h"
 
 #import <Masonry/Masonry.h>
-#import "WYIconfont.h"
 #import "HistoryDataCache.h"
 #import "ScanViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
@@ -32,7 +31,7 @@
     self.navigationItem.rightBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(0, 0, 32, 32);
-        button.titleLabel.font = [WYIconfont fontOfSize:20];
+        button.titleLabel.font = [TLIconfont fontOfSize:20];
         [button setTitle:@"\uf014" forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(deleteButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
